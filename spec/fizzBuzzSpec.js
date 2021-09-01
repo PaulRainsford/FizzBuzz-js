@@ -23,5 +23,11 @@ describe('FizzBuzz', function() {
             expect(fizzBuzz.play(30)).toEqual('Fizzbuzz');
         });
     });
+
+    describe('all other numbers', function() {
+        it('knows 1 is 1', function() {
+            expect(fizzBuzz.play(1)).toEqual(1);
+        });
+    });
     
 });
